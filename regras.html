@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io (2)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styleRegras.css">
+    <script src="jogo.js"></script>
+    <title>Jokenpô</title>
+</head>
+<body>
+    <header>
+        <span id="voltar">
+            <button id="btnVoltar" onclick="btnVoltar()"><img id="imgVoltar" src="imagens/voltar.png" alt=""></button>
+        </span>
+    </header>
+    <main>
+        <div id="menuRegras">
+            <h1 id="tituloRegras02">Pedra papel e tesoura</h1>
+            <div id="pedraXpapel">
+                ✔<img id="imgRegras" src="imagens/papel.png" alt="">
+                <img id="imgRegras" src="imagens/vs.png" alt="">
+                <img id="imgRegras" src="imagens/pedra.png" alt="">✘
+                <p id="textoRegras">Papel embrulha pedra</p>
+            </div>
+            <div id="papelXtesoura">
+                ✔<img id="imgRegras"  src="imagens/tesoura.png" alt="">
+                <img id="imgRegras"  src="imagens/vs.png" alt="">
+                <img id="imgRegras"  src="imagens/papel.png" alt="">✘
+                <p id="textoRegras">Tesoura corta papel</p>
+            </div>
+            <div id="pedraXtesoura">
+                ✔<img id="imgRegras"  src="imagens/pedra.png" alt="">
+                <img id="imgRegras"  src="imagens/vs.png" alt="">
+                <img id="imgRegras"  src="imagens/tesoura.png" alt="">✘
+                <p id="textoRegras">Pedra quebra tesoura</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="imagens/icon-ppt.png" alt="Icone pedra, papel e tesoura" id="icon-ppt">
+    </footer>
+</body>
+</html>

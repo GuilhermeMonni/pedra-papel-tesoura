@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io (2)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styleJogo.css">
+    <script src="jogo.js"></script>
+    <title>Jokenpô</title> 
+</head>
+<body>
+    <header>
+        <span id="voltar">
+            <button id="btnVoltar" onclick="btnVoltar()"><img id="imgVoltar" src="imagens/voltar.png" alt=""></button>
+        </span> 
+    </header>
+    <main>
+        <div class="containerJogo">
+            <h3 id="escolhaJogo">Faça a sua escolha</h3>
+                <span class="botoes">
+                    <button id="bPedra" onclick="pedra()"></button>
+                    <button id="bPapel" onclick="papel()"></button>
+                    <button id="bTesoura" onclick="tesoura()"></button>
+                </span>
+                <br>
+                <div class="jogadas">
+                    <div>
+                        <p id="jogadas-txt">Você</p>
+                        <img id="resposta" src="imagens/fundo.png">
+                    </div>
+                    <div>
+                        <p id="jogadas-txt">Computador</p>
+                        <img id="pc" src="imagens/fundo.png">
+                    </div>
+                </div>
+                <div id="ponto">
+                    Inicie a rodada!
+                </div>
+                <div id="placar">
+                    <span id="pontoJogador"></span> 
+                    <span id="xis"></span> 
+                    <span id="pontoComputador"></span>
+                </div>
+        </div>
+        <div class="alert">
+            <h3 id="txt-alert">Vamos uma revanche?</h3>
+            <span id="placar-final"></span>
+            <button id="btn-sim" onclick="revanche()">Sim</button>
+            <button id="btn-nao" onclick="semRevanche()">Não</button>
+        </div>
+    </main>
+    <footer>
+        <img src="imagens/icon-ppt.png" alt="Icone pedra, papel e tesoura" id="icon-ppt">
+    </footer>
+</body>
+</html>

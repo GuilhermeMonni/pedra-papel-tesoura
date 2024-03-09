@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2? family= Honk & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@keyframes animaLogo {
+  10% {
+    width: 40px;
+  }
+  20% {
+    transform: translateX(1400px);
+  }
+  30% {
+    transform: translateX(-1000px);
+  }
+}
+
+body {
+  margin: auto;
+  text-align: center;
+  background-color: wheat;
+  overflow: hidden;
+}
+#menu {
+  /*conteúdo principal da pág home*/
+  margin: 60px auto;
+  text-align: center;
+  background-color: #ed1c24;
+  height: 360px;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 7px;
+}
+#tituloHome01 {
+  /*titulo home*/
+  text-align: center;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 600;
+  font-size: 2.8em;
+  display: inline-block;
+  margin: 40px auto auto 10px;
+}
+.anima_logo {
+  width: 0px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  animation-name: animaLogo;
+  animation-duration: 30s;
+}
+#botoes {
+  padding: 50px;
+}
+#btnJogar,
+#btnRegras,
+#btnRedes {
+  /*botões da home*/
+  margin: 20px auto;
+  display: block;
+  color: black;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9em;
+  background-color: wheat;
+  z-index: 1;
+}
+#btnRedes:hover,
+#btnRegras:hover,
+#btnJogar:hover {
+  /*botões da home*/
+  background-color: #ed1c24;
+  color: wheat;
+  transform: scale(1.05);
+}
+footer {
+  position: fixed;
+  bottom: 1px;
+  left: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  color: black;
+}
+#icon-ppt {
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow: hidden;
+        margin: auto;
+        text-align: center;
+      }
+      #tituloHome01 {
+        /*titulo home*/
+        text-align: center;
+        font-family: "Madimi One", sans-serif;
+        font-weight: 600;
+        font-size: 3.2em;
+        margin: 40px auto;
+      }
+    #menu {
+        /*conteúdo principal da pág home*/
+        margin: 30px auto;
+        text-align: center;
+        height: 400px;
+        width: 90%;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 8px rgba(0, 0, 0, 0.037);
+    }
+    #btnJogar,
+    #btnRegras,
+    #btnRedes {
+      /*botões da home*/
+      margin: 30px auto;
+      display: block;
+      color: black;
+      width: 50%;
+      height: 55px;
+      border-radius: 10px;
+      border: 1px solid black;
+      font-family: "Roboto Mono", monospace;
+      font-size: 0.9em;
+      background-color: wheat;
+    }
+    .anima_logo{
+        display: none;
+    }
+}

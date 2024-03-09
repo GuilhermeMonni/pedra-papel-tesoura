@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: auto;
+    text-align: center;
+    background-color: wheat;
+}
+#menuRegras{/*menu da pág de regras*/
+    margin: 8px auto;
+    text-align: center;
+    background-color: #ED1C24;
+    height: 560px;
+    min-width: 150px;
+    max-width: 500px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.736);
+}
+#voltar{/*div do btn de voltar para a home*/
+    width: 30px;                    
+    display: inline-block;
+    margin-right: 90%;
+    padding: 2px;
+    background-color: wheat;
+}
+#btnVoltar{/*botao de voltar para a home*/
+    background-color: wheat;        
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+#btnVoltar:hover{/*botao de voltar para a home*/
+    background-color: #ed1c23;
+    border-radius: 20px;
+}
+#imgVoltar{/*imagem do botão de voltar*/
+    height: 30px;
+    width: 30px;
+}
+#tituloRegras02{/*titulo 02 da pág de regras*/
+    margin: auto auto 2px auto;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+#imgRegras{/*imagens da pág de regras*/
+    margin: 2px auto;
+    width: 100px;
+}
+#textoRegras{/*texto das regras*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+}
+#icon-ppt{
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow: hidden;
+        margin: auto;
+        text-align: center;
+    }
+    #menuRegras {
+        /*conteúdo principal da pág home*/
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px;
+        height: 580px;
+        width: 80%;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 8px rgba(0, 0, 0, 0.037);
+    }
+}

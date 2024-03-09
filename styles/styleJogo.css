@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: auto;
+    text-align: center;
+    background-color: wheat;
+    overflow: hidden;
+}
+#voltar{/*div do btn de voltar para a home*/
+    width: 30px;                    
+    display: inline-block;
+    margin-right: 90%;
+    padding: 2px;
+    background-color: wheat;
+}
+#btnVoltar{/*botao de voltar para a home*/
+    background-color: wheat;        
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+#btnVoltar:hover{/*botao de voltar para a home*/
+    background-color: #ed1c23;
+    border-radius: 20px;
+}
+#imgVoltar{/*imagem do botão de voltar*/
+    height: 30px;
+    width: 30px;
+}
+h3#escolhaJogo{/*escolha jogador*/
+    margin: 50px auto;
+    font-family: 'Honk', system-ui;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.containerJogo{/*conteúdo principal da pág do jogo*/
+    margin: 8px auto;
+    text-align: center;                     
+    padding: 1px;
+    background-color: #ed1c23;
+    height: 590px;
+    min-width: 150px;
+    max-width: 500px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.736);
+}
+#bPedra{/*botão de escolher pedra*/
+    background-image: url("../imagens/pedra.png");
+    background-color: #ED1C24;
+    height: 93px;
+    width: 100px;
+    border: beige;
+    cursor: pointer;
+    margin-right: 30px;
+}
+#bPapel{/*botão de escolher papel*/
+    background-image: url(../imagens/papel.png);
+    background-color: #ED1C24;
+    height: 93px;
+    width: 115px;
+    border: beige;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#bTesoura{/*botão de escolher tesoura*/
+    background-image: url(../imagens/tesoura.png);
+    background-color: #ED1C24;
+    height: 93px;
+    width: 108px;
+    border: beige;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#bPedra:hover, #bPapel:hover, #bTesoura:hover{/*botão de escolher tesoura*/
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.169);
+    transform: scale(1.02);
+    background-color: #ff000000;
+    border-radius: 10px;
+}
+.jogadas{
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#resposta, #pc{/*escolha do pc*/
+    height: 80px;
+}
+#ponto{/*resposta de quem pontuou*/
+    margin: 80px auto 20px auto;
+    padding: 7px 20px 14px 20px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    height: 14px;
+    width: 400px;
+}
+#pontoJogador, #pontoComputador{/*placar*/
+    margin: 10px auto;
+    padding: 10px;
+    font-family: cursive;
+}
+#jogadas-txt{/*texto das jogadas*/
+    font-family: "Roboto Mono", monospace;
+    font-size: 17px;
+}
+#placar{
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    font-family: "Micro 5", sans-serif;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+footer #icon-ppt{
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.alert{
+    display: none;
+    margin: 10px auto;
+    background-color: #ED1C24;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1000px rgba(0, 0, 0, 0.329);
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 1.1em;
+}
+#btn-sim{
+    margin: 20px auto;
+    background-color: rgb(57, 181, 57);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.242);
+    border-radius: 20px;
+    margin-right: 50px;
+    width: 80px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9em;
+}
+#btn-nao{
+    margin: 20px auto;
+    background-color: rgb(104, 0, 0);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.242);
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9em;
+}
+#btn-nao:hover, #btn-sim:hover{
+    scale: 1.03;
+}
+#placar-final{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Micro 5", sans-serif;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+@media (max-width: 700px) {
+    body {
+        overflow: hidden;
+        margin: auto;
+        text-align: center;
+    }
+    .containerJogo {
+        /*conteúdo principal da pág home*/
+        margin: 20px auto;
+        margin-bottom: 0px;
+        text-align: center;
+        height: 600px;
+        width: 95%;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 8px rgba(0, 0, 0, 0.037);
+    }
+    #ponto {/*resposta de quem pontuou*/
+        margin-top: 20px;
+        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+        font-size: 17px;
+        color: white;
+        height: 14px;
+        width: 100%;
+    }
+    footer #icon-ppt{
+        width: 50px;
+        position: fixed;
+        left: 20px;
+        bottom: 60px;
+    }
+}
